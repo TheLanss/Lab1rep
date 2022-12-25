@@ -1,3 +1,51 @@
+cursor.execute("INSERT INTO subject_t (name) VALUES ('Алгебра и Геометрия');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Азовая Александра Афанасьева', 'Алгебра и Геометрия');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Важаемова Рина Александровна', 'Алгебра и Геометрия');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (1, 'Алгебра и Геометрия', 406, 1, 'Азовая Александра Афанасьева');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (6, 'Алгебра и Геометрия', 406, 2, 'Важаемова Рина Александровна');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (12, 'Алгебра и Геометрия', 504, 3, 'Азовая Александра Афанасьева');")
+
+cursor.execute("INSERT INTO subject_t (name) VALUES ('Компьютерная графика');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Арбузова Олеся Михайловна', 'Компьютерная графика');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (1, 'Компьютерная графика', 511, 2, 'Арбузова Олеся Михайловна');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (3, 'Компьютерная графика', 223, 1, 'Арбузова Олеся Михайловна');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (9, 'Компьютерная графика', 511, 4, 'Арбузова Олеся Михайловна');")
+
+cursor.execute("INSERT INTO subject_t (name) VALUES ('Физическая культура и спорт');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Царёв Олег Михайлович', 'Физическая культура и спорт');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (1, 'Физическая культура и спорт', 232, 3, 'Царёв Олег Михайлович');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (4, 'Физическая культура и спорт', 232, 3, 'Царёв Олег Михайлович');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (10, 'Физическая культура и спорт', 232, 3, 'Царёв Олег Михайлович');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (12, 'Физическая культура и спорт', 232, 2, 'Царёв Олег Михайлович');")
+
+cursor.execute("INSERT INTO subject_t (name) VALUES ('Введение в ИТ');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Преподаватель 404', 'Введение в ИТ');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Белгородова Тамара Ивановна', 'Введение в ИТ');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (3, 'Введение в ИТ', 329, 2, 'Преподаватель 404');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (5, 'Введение в ИТ', 404, 3, 'Преподаватель 404');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (5, 'Введение в ИТ', 306, 4, 'Белгородова Тамара Ивановна');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (8, 'Введение в ИТ', 451, 4, 'Преподаватель 404');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (9, 'Введение в ИТ', 221, 3, 'Преподаватель 404');")
+
+cursor.execute("INSERT INTO subject_t (name) VALUES ('Вычтех');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Азотая Александра Афанасьева', 'Вычтех');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Жердин Павел Виссарионович', 'Вычтех');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (3, 'Вычтех', 512, 3, 'Азотая Александра Афанасьева');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (8, 'Вычтех', 512, 2, 'Жердин Павел Виссарионович');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (8, 'Вычтех', 512, 3, 'Азотая Александра Афанасьева');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (10, 'Вычтех', 223, 4, 'Азотая Александра Афанасьева');")
+
+
+cursor.execute("INSERT INTO subject_t (name) VALUES ('Иностранный язык');")
+cursor.execute("INSERT INTO teacher_t (full_name, subject) VALUES ('Нелапин Нетигран Нельвович', 'Иностранный язык');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (6, 'Иностранный язык', 404, 3, 'Нелапин Нетигран Нельвович');")
+cursor.execute("INSERT INTO timetable_t (day, subject, room_numb, start_time, teacher) VALUES (10, 'Иностранный язык', 404, 2, 'Нелапин Нетигран Нельвович');")
+
+
+conn.commit()
+
+
+
 sides = [3,2,4,7,5,12,11,13,15,16,14,14]
 sides = sorted(sides,reverse=True)
 smax = 0
